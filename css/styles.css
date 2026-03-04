@@ -26,6 +26,12 @@ body {
   display: grid;
   place-items: center;
   align-content: center;
+  background-image:
+    url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position:
+    -300px -300px,
+    right -300px bottom -300px;
 }
 
 .card {
