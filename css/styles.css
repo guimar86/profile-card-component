@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap");
+:root {
+  /* Colors - Primary */
+  --color-blue-600: hsl(185, 75%, 39%);
+  --color-navy-950: hsl(229, 23%, 23%);
+  --color-gray-500: hsl(227, 10%, 46%);
+
+  /* Colors - Neutral */
+  --color-gray-100: hsl(225, 10%, 92%);
+
+  /* Typography */
+  --font-family: "Kumbh Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-base: 18px;
+
+  /* Layout */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--color-blue-600);
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1em;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+  position: relative;
+}
+
+.card-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--color-gray-100);
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5em 0 1em 0;
+}
+.detail p {
+  margin: 0;
+  padding: 0;
+}
+.detail span:first-child {
+  font-weight: bold;
+  color: var(--color-navy-950);
+}
+.detail {
+  color: var(--color-gray-500);
+  font-weight: normal;
+}
+
+.card-footer {
+  display: flex;
+  gap: 1em;
+  padding: 1.5em 0 2em 0;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.stats p:first-child {
+  font-weight: bold;
+}
+.stats p:last-child {
+  color: var(--color-gray-500);
+  font-size: 11px;
+}
+
+.stats p {
+  margin: 2px 0;
+}
